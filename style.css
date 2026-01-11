@@ -80,15 +80,19 @@ main{
         li{
             flex: none;
             width: 300px;
-            height: 100px;
-            background-color: orange;
+            height: 400px;
+            background-color: lightsalmon;
             margin-left: 10px;
             margin-bottom: 10px;
             border-radius: 30px;
             box-shadow: 0px 9px 11px 0px rgba(0, 0, 0, 0.16);
             cursor: pointer;
-            
        } 
+       &:first-child video{
+        height: 400px;
+        width: 300px;
+        border-radius: 30px;
+       }
 
     }
    
