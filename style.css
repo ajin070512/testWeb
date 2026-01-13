@@ -8,10 +8,13 @@ ul,li{
 
 nav{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 60px;
 
     .nav-icon{
+        display: flex;
+        align-items: center;
         width: 40px;
         height: 40px;
         margin-right: 10px;
@@ -22,12 +25,12 @@ nav{
             border-radius: 50%;
         }
         cursor: pointer;
-    }
-    .search{
+        .search{
         position: relative;
         height: 50px;
         width: 400px;
         margin-top: 20px;
+        margin-left: 10px;
 
         input{
             box-sizing: border-box;
@@ -68,6 +71,26 @@ nav{
     }
 
     }
+    }
+    
+    .new-page{
+        width: 150px;
+        height: 35px;
+        box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.16); /*2*/
+        border-radius: 25%;
+        border: 2px dashed rosybrown;
+        background-color: bisque;
+        text-align: center;
+        margin-right: 20px;
+        a{
+            text-decoration: none;
+            font-weight: 600;
+            font-size: medium;
+            line-height: 35px;
+            color: aquamarine;
+
+        }
+    }
 }
 main{
     
@@ -78,7 +101,6 @@ main{
         -webkit-overflow-scrolling: touch;
         margin-top: 10px;
         li{
-            flex: none;
             width: 300px;
             height: 400px;
             background-color: lightsalmon;
@@ -88,7 +110,7 @@ main{
             box-shadow: 0px 9px 11px 0px rgba(0, 0, 0, 0.16);
             cursor: pointer;
        } 
-       &:first-child video{
+       & video{
         height: 400px;
         width: 300px;
         border-radius: 30px;
